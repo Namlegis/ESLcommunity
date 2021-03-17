@@ -1,0 +1,21 @@
+.page-title {
+    padding-bottom: 2rem;
+    font-size: 7.2rem;
+}
+
+.choose-by {
+    // display: flex;
+    // flex-direction: column;
+    .choose-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        li {
+            padding: 2rem 3rem;
+        }
+
+    }
+}
