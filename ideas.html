@@ -32,32 +32,95 @@
 
     <!--====Main Section====-->
     <main>
+        <!-- =====Section for the page title and filter list==== -->
         <section class="top-text">
             <h1 class="page-title">Ideas</h1>
-            <div class="choose-by">  <!--!!!!take out???!!!!-->
-                <div class="choose-nav class-size">
-                    <h4>choose by <i>class size</i>:</h4>
-                    <ul>
-                        <li>One-on-One</li>
-                        <li>Small Groups</li>
-                        <li>Larger Classes</li>
-                    </ul>
-                </div>
-                <div class="choose-nav type">
-                    <h4>choose by <i>type</i>:</h4>
-                    <ul>
-                        <li>Full Lesson</li>
-                        <li>Homework</li>
-                        <li>Speaking / Writing</li>
-                        <li>Reading / Listening</li>
-                    </ul>
+            <div class="choose-nav type">
+                <h4>choose by <i>type</i>:</h4>
+                <div id="btnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                    <button class="btn" onclick="filterSelection('fullLesson')">Full Lessons</button>
+                    <button class="btn" onclick="filterSelection('homework')">Homework</button>
+                    <button class="btn" onclick="filterSelection('project')">Projects</button>
                 </div>
             </div>
         </section>
+
+        <!-- ==== Idea Section, filterable by type-->
+        <section class="ideas">
+
+            <div class="container">
+                <article class="latest-posts filterDiv grammar worksheets">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>-ed Ending Pronunciation</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar websites">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Top 5 Translation Websites</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar worksheets">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>-ed Ending Pronunciation</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar websites">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Top 5 Translation Websites</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
     </main>
 
-     <!--=== START of the Footer ====-->
-     <footer>
+    <!--=== START of the Footer ====-->
+    <footer>
         <section class="footer-wrapper">
            <div class="to-top-btn">
                <a href="#" class="fa fa-arrow-circle-up"></a>
@@ -72,7 +135,8 @@
                <h2>hand coded by me</h2>
            </div>
         </section>
-   </footer>
-   <!--=== END of the Footer ====-->
+    </footer>
+    <!--=== END of the Footer ====-->
 
+    <script src="./scripts/post_filter.js"></script> 
 </body>

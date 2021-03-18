@@ -35,17 +35,90 @@
     <main>
         <section class="top-text">
             <h1 class="page-title">Resources</h1>
-            <div class="choose-by">  <!--!!!!take out???!!!!-->
-                <div class="choose-nav type">
-                    <h4>choose by <i>type</i>:</h4>
-                    <ul>
-                        <li>Worksheets</li>
-                        <li>Websites</li>
-                        <li>YouTube Channels</li>
-                        <li>Grammar Specific</li>
-                    </ul>
+            <div class="choose-nav type">
+                <h4>choose by <i>type</i>:</h4>
+                <div id="btnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+                    <button class="btn" onclick="filterSelection('worksheets')">Worksheets</button>
+                    <button class="btn" onclick="filterSelection('websites')">Websites</button>
+                    <button class="btn" onclick="filterSelection('yt')">YouTube Channels</button>
+                    <button class="btn" onclick="filterSelection('grammar')">Grammar Specific</button>
                 </div>
             </div>
+        </section>
+
+        <!-- ==== Idea Section, filterable by type-->
+        <section class="resources">
+
+              <div class="container">
+                <article class="latest-posts filterDiv grammar worksheets">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>-ed Ending Pronunciation</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar websites">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Top 5 Translation Websites</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar worksheets">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>-ed Ending Pronunciation</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv grammar websites">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Top 5 Translation Websites</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+                <article class="latest-posts filterDiv">
+                    <img src="http://placecorgi.com/500/400" alt="">
+                    <div class="latest-text">
+                        <h3>Post Title</h3>
+                        <p>Here is some text for a post. This text will help people know if they should click it or not. It will probably have about this many words. </p>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </article>
+            </div>
+
+
+
         </section>
     </main>
 
@@ -68,4 +141,5 @@
    </footer>
    <!--=== END of the Footer ====-->
 
+   <script src="./scripts/post_filter.js"></script> 
 </body>
