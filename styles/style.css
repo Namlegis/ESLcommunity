@@ -396,6 +396,22 @@ p {
   font-size: 7.2rem;
 }
 
+.stories {
+  margin: 6rem 0;
+  padding: 0 4rem;
+}
+
+.stories article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6rem;
+}
+
+.stories img {
+  padding-left: 2rem;
+}
+
 .choose-nav {
   display: -webkit-box;
   display: -ms-flexbox;
