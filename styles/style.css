@@ -393,62 +393,65 @@ p {
 }
 
 .page-title {
-  padding-bottom: 2rem;
   font-size: 7.2rem;
 }
 
-.choose-by .choose-nav {
+.choose-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
 }
 
-.choose-by ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.choose-nav h4 {
+  margin-right: 1.5rem;
 }
 
-.choose-by ul li {
-  padding: 2rem 3rem;
-}
-
-/* Style the buttons */
-.btn {
+.choose-nav #btnContainer .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
+  padding: .8rem 1.4rem;
+  margin: 0 1.6rem;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #ddd;
+.choose-nav #btnContainer .btn:hover {
+  background-color: rgba(25, 211, 140, 0.335);
+  border-radius: 5px;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
+.choose-nav #btnContainer .btn.active {
+  background-color: rgba(18, 151, 100, 0.424);
+  border-radius: 5px;
+  color: black;
 }
 
 /* Post Styling */
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  margin-left: -50px;
+}
+
 .filterDiv {
+  float: left;
+  width: 33%;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
   display: none;
+  padding: 0 50px;
 }
 
 .show {
   display: block;
   float: left;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
