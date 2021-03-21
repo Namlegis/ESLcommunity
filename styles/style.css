@@ -137,7 +137,7 @@ footer .fa {
   text-align: center;
   text-decoration: none;
   width: auto;
-  min-width: 4rem;
+  min-width: 4.5rem;
   border-radius: 50%;
   margin: 0 10px;
 }
@@ -396,20 +396,102 @@ p {
   font-size: 7.2rem;
 }
 
+.stories-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stories-wrapper .sidebar {
+  width: 25%;
+  height: 25vh;
+  margin-top: 2.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+
+.stories-wrapper .sidebar .sidebar-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  margin: 10rem 0;
+}
+
+.stories-wrapper .sidebar .sidebar-subscribe .subscribe-text {
+  grid-auto-rows: auto;
+}
+
+.stories-wrapper .sidebar .sidebar-subscribe .subscribe-form {
+  padding: none;
+}
+
 .stories {
-  margin: 6rem 0;
-  padding: 0 4rem;
+  margin-bottom: 6rem;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 5px;
+  padding: 4rem 3rem;
+}
+
+.stories h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .stories article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 6rem;
+  padding: 4rem 0;
+}
+
+.stories article h3 {
+  border-top: solid #707070 1px;
+  padding: 1rem 0 .2rem 0;
+}
+
+.stories article .article-text {
+  padding-right: 2rem;
 }
 
 .stories img {
   padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.stories .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stories .meta .svg-inline--fa {
+  width: 1.2rem;
+  height: auto;
+  margin-right: .5rem;
+}
+
+.stories .meta p {
+  font-size: 1.4rem;
+}
+
+.stories .meta .author {
+  margin-right: 1.2rem;
 }
 
 .choose-nav {

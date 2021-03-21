@@ -2,15 +2,76 @@
         font-size: 7.2rem;
 }
 
-.stories {
-    margin: 6rem 0;
-    padding: 0 4rem;
-    article {
-        display: flex;
-        margin-bottom: 6rem;
-    }
-    img {
-        padding-left: 2rem;
+.stories-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .sidebar {
+        width: 25%;
+        height: 25vh;
+        margin-top: 2.5rem;
+        position: sticky;
+        top: 10%;
+
+        .sidebar-subscribe {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 30rem;
+                margin: 10rem 0;
+                .subscribe-text {
+                    grid-auto-rows: auto;
+                }
+                .subscribe-form {
+                    padding: none;
+                }
+        }
     }
 }
 
+.stories {
+    margin-bottom: 6rem;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+    padding: 4rem 3rem;
+    //"Latest Stories"
+    h2 { 
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        // text-decoration: underline 1px rgb(116, 116, 116);
+        // margin-left: -5rem;
+    }
+    //Article wrapper
+    article {
+        display: flex;
+        padding: 4rem 0;
+        h3 {
+            border-top: solid rgb(112, 112, 112) 1px;
+            padding: 1rem 0 .2rem 0;
+        }
+        .article-text {
+            padding-right: 2rem;
+        }
+    }
+    img {
+        padding-left: 2rem;
+        padding-top: 2rem; 
+    }
+    .meta {
+        display: flex;
+        .svg-inline--fa {
+            width: 1.2rem;
+            height: auto;
+            margin-right: .5rem;
+        } 
+
+        p {
+            font-size: 1.4rem;
+        }
+        .author {
+            margin-right: 1.2rem;
+        }
+    }
+}
