@@ -1,0 +1,92 @@
+@media (max-width:1300px){
+    .stories {
+        width: fit-content;
+    }
+    .stories article {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .article-text {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .filterDiv {
+        width: 48%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+@media all and (max-width:700px) {
+
+//Home Page
+    .hero {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .hero-carousel {
+        max-height: 50vh;
+    }
+    .posts-wrapper {
+        flex-direction: column;
+        .latest-posts {
+            margin: 0 auto 2rem;
+            width: 100%;
+        }
+    }
+    .latest-section {
+        margin-bottom: 50px;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding-left: 10%;
+        padding-top: 0%;
+        .subscribe-text {
+            grid-auto-rows: auto;
+        }
+        .subscribe-form {
+            // padding: 0;
+            // width: 100%;
+            // align-self: center;
+            padding-right: 10%;
+        }
+    }
+
+// Ideas and Resources
+    .top-text {
+        h1 {
+            font-size: 4.8rem;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .filterDiv {
+        width: 100%;
+    }
+//Experiences
+    .stories {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .stories .article-text {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}

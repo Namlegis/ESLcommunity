@@ -1,6 +1,5 @@
 .stories-wrapper {
     display: flex;
-    justify-content: space-between;
 
     .sidebar {
         width: 25%;
@@ -18,10 +17,15 @@
                 margin: 1rem 0;
                 .subscribe-text {
                     grid-auto-rows: auto;
+                    padding: 0;
+                    padding-left: 10%;
                 }
-                .subscribe-form {
-                    padding: none;
+                h2 {
+                    font-size: 5rem;
                 }
+                #email-input {
+                    width: 100%;
+                } 
         }
     }
 }
@@ -29,7 +33,7 @@
 .stories {
     margin-bottom: 6rem;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
     padding: 4rem 3rem;
     //"Latest Stories"
@@ -42,18 +46,21 @@
     //Article wrapper
     article {
         display: flex;
+        align-items:center;
         padding: 4rem 0;
         h3 {
             border-top: solid rgb(112, 112, 112) 1px;
             padding: 1rem 0 .2rem 0;
         }
-        .article-text {
-            padding-right: 2rem;
-        }
     }
-    img {
-        padding-left: 2rem;
-        padding-top: 2rem; 
+    .article-text {
+        padding-right: 2rem;
+        width: 70ch;
+        align-self: flex-start;
+    }
+    .article-img  {
+        height: auto;
+        width: 100%; 
     }
     .meta {
         display: flex;
