@@ -11,6 +11,7 @@
     display: flex;
     margin: 6rem auto;
     // width: 80%;
+    max-width: 80%;
 }
 
 .contact-form ,
@@ -21,10 +22,14 @@
     align-items: center;
     font-size: 3rem;
 }
+.contact-body-right {
+    padding-left: 2rem;
+    align-items: right;
+}
 
 .contact-form {
     // background:coral;
-    
+    padding-right: 2rem;
     padding-bottom: 10rem;
     max-height: 100%;
     

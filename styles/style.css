@@ -88,7 +88,7 @@ header nav a::before {
   display: block;
   width: 100%;
   height: 2px;
-  background: #d86262;
+  background: #5553b6;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 400ms;
@@ -136,7 +136,7 @@ footer .fa {
   text-align: center;
   text-decoration: none;
   width: auto;
-  min-width: 4.5rem;
+  min-width: 4rem;
   border-radius: 50%;
   margin: 0 10px;
 }
@@ -171,16 +171,14 @@ footer .fa-arrow-circle-up {
   margin-left: 0;
 }
 
-a:link {
-  color: black;
+a {
+  color: #470FF4;
 }
 
 a:hover {
-  color: #e60000;
-}
-
-a:visited {
-  color: #414141;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  color: #4056F4;
 }
 
 h1 {
@@ -543,6 +541,15 @@ p {
 .container {
   margin-top: 20px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
 .container h2 {
@@ -551,7 +558,7 @@ p {
 
 .filterDiv {
   float: left;
-  width: 32%;
+  width: 33%;
   text-align: center;
   margin: 2px;
   display: none;
@@ -586,8 +593,13 @@ p {
 }
 
 .show {
-  display: block;
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .p-contact {
@@ -604,6 +616,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin: 6rem auto;
+  max-width: 80%;
 }
 
 .contact-form,
@@ -624,7 +637,15 @@ p {
   font-size: 3rem;
 }
 
+.contact-body-right {
+  padding-left: 2rem;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
 .contact-form {
+  padding-right: 2rem;
   padding-bottom: 10rem;
   max-height: 100%;
 }
@@ -694,10 +715,15 @@ p {
 }
 
 @media (max-width: 1300px) {
+  .choose-nav {
+    padding: 3rem 0;
+  }
+  .choose-nav #btnContainer .btn {
+    margin: 0 .8rem;
+  }
   .stories {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    margin: unset;
+    width: 70%;
   }
   .stories article {
     -webkit-box-orient: vertical;
@@ -711,6 +737,28 @@ p {
   .article-text {
     max-width: 600px;
   }
+  .contact-body {
+    max-width: 100%;
+  }
+  .p-contact {
+    max-width: 90%;
+  }
+  .contact-body-right .contact-h5 {
+    max-width: 100%;
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    position: static;
+  }
+  header nav ul :nth-child(4) {
+    position: static;
+  }
+  .break-line {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -719,6 +767,15 @@ p {
   }
   .sidebar {
     display: none;
+  }
+  .p-contact {
+    max-width: 100%;
+  }
+  .contact-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -768,8 +825,47 @@ p {
   .subscribe .subscribe-form {
     padding-right: 10%;
   }
+  .top-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .top-text h1 {
     font-size: 4.8rem;
+  }
+  .top-text .choose-nav {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top-text .choose-nav #btnContainer {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .top-text .choose-nav #btnContainer .btn {
+    margin: 0;
+    padding: .6rem 1rem;
   }
   .container {
     display: -webkit-box;
@@ -807,6 +903,26 @@ p {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  .contact-form {
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+  .contact-body-right {
+    all: initial;
+  }
+  .contact-body-right h3 {
+    font-size: 3rem;
+  }
+  .contact-form .write-here {
+    width: 100%;
+  }
+  .formInput {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
