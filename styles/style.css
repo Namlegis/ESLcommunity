@@ -556,6 +556,7 @@ footer .built-by h2 {
 .stories .article-img {
   height: auto;
   width: 100%;
+  margin: 2rem 0;
 }
 
 .stories .meta {
