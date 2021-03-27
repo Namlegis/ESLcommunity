@@ -11,23 +11,26 @@
 
     <!--For the fonts and social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!--=== START of the Header ====-->
-   <header>
-        <h1 id="logo"><a href="./index.html">ESL Community</a></h1>
-        <div class="break-line"></div> <!--This is for the vertical separating line-->
-        <nav>
-            <ul>
-                <li><a href="./ideas.html">Ideas</a></li>
-                <li><a href="./resources.html">Resources</a></li>
-                <li><a href="./experiences.html">Experiences</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
+    <header>
+        <div class="header-wrapper">
+            <h1 id="logo" class="logo"><a href="./index.html">ESL Community</a></h1>
+            <div class="break-line"></div> <!--++++This is for the vertical separating line++++-->
+            <nav>
+                <ul class="menu">
+                    <li><a href="./ideas.html">Ideas</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <li><a href="./experiences.html">Experiences</a></li>
+                    <li><a class="nav-contact" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 <!--=== END of the Header ====-->
 
@@ -70,7 +73,7 @@
                         <label for="message">Message:</label>
                     </div>
                     <div class="contactForm-grid-2of2">
-                        <textarea id="message" name="message" placeholder="">
+                        <textarea type="text" id="message" name="message" placeholder="Write here...">
                         </textarea>                        
                     </div>
                 </div> 
@@ -84,12 +87,15 @@
             <!--Other Contact-->
             <section class="contact-body-right">
                 <h3>
-                    You may also contact us at:
+                    Or contact us at:
                 </h3>
                 <div class="other-contact"> 
-                    <h5 class="contact-h5">Email: contact@eslcommunity.org</h5>
-                    <h5 class="contact-h5">Facebook: <a href="#" class="">www.facebook.com/eslcommunity/</a> </h5>
-                    <h5 class="contact-h5">Twitter: <a href="#" class="">www.twitter.com/eslcommunity/</a></h5>
+                    <h5 class="contact-h5">Email:</h5>
+                    <a href="#" class="">contact@eslcommunity.com</a>
+                    <h5 class="contact-h5">Facebook:</h5>
+                    <a href="#" class="">www.facebook.com/eslcommunity/</a>
+                    <h5 class="contact-h5">Twitter:</h5>
+                    <a href="#" class="">www.twitter.com/eslcommunity/</a>
                 </div>
                
 
