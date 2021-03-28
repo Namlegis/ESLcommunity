@@ -29,3 +29,9 @@ function shrinkHeader(){
         console.log("yes");
     }
 }
+
+function scrollUp() {
+    //Scrolls the page to the top when the button in the footer is clicked
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
