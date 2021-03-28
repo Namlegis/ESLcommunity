@@ -1,6 +1,7 @@
+/*===== START OF RESPONSIVE STYLING =====*/
 @media (max-width:1300px){
     .hero-img {
-        max-height: 60vh;
+        max-height: 60vh; //The hero image is too big on smaller screens, so this shrinks it some
     }
     .choose-nav {
         padding: 3rem 0;
@@ -32,7 +33,7 @@
         }
     }
 
-//Fixes an issue where the page only shows 2 articles per row and leaves a big open space
+    //Fixes an issue where the page only shows 2 articles per row and leaves a big open space
     .filter-div {
         width: 32%;
     }
@@ -44,6 +45,7 @@
 }
 
 @media (max-width:1200px){
+    //Fixes issues with the header
     .header-wrapper nav {
         position: static;
     }
@@ -56,7 +58,7 @@
     
 }
 @media (max-width: 1000px) {
-//Navigation on Tablet / Mobile --- Makes the header switch from a flex row direction to column direction. Also fixes some of the font sizes to fit inside the viewport
+/*Navigation on Tablet / Mobile --- Makes the header switch from a flex row direction to column direction. Also fixes some of the font sizes to fit inside the viewport */
     .header-wrapper {
         flex-direction: column;
         align-items: center;
@@ -71,16 +73,37 @@
         font-size: 1.6rem;
         font-weight: 300;
     }
-//END NAV
+/*END OF NAV on Tablet & Mobile */
 
+    //changes the filter navigation from row to column along with other changes to better fit smaller screens.
+    .choose-nav {
+        padding: 1rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        #btnContainer {
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .btn {
+                margin: 0;
+                padding:.6rem 1rem;
+            }
+        }
+    }
     .stories {
         width: 100%;
     }
     .filter-div {
-        width: 48%;
+        width: 48%; //Go from 3 columns to 2 columns
     }
     .sidebar {
-        display: none;
+        display: none; //Hides the subscribe navbar
     }
     .p-contact {
         max-width: 100%;
@@ -91,6 +114,10 @@
     .contact-body-right .contact-h5 {
         display: flex;
         align-items: center;
+    }
+    .contact-body-right,
+     .contact-form{
+        padding: 5rem 0; //Centers everything, takes away the padding to push them apart when in 2 columns
     }
     .other-contact {
         display: flex;
@@ -127,13 +154,12 @@
         }
         .built-by {
             margin: 2rem 0 1rem 0;
-        }
-        
+        }    
     }
     .filter-div {
         min-height: 0px;
     }
-//Home Page
+//HOME PAGE
     .hero {
         margin-top: 0;
         padding: 0;
@@ -165,9 +191,6 @@
             grid-auto-rows: auto;
         }
         .subscribe-form {
-            // padding: 0;
-            // width: 100%;
-            // align-self: center;
             padding-right: 10%;
         }
     }
@@ -181,26 +204,7 @@
         h1 {
             font-size: 4.8rem;
         }
-        .choose-nav {
-            padding: 1rem;
-            margin: 0 auto;
-            margin-top: 2rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            #btnContainer {
-                margin-top: 1rem;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                .btn {
-                    margin: 0;
-                    padding:.6rem 1rem;
-                }
-            }
-        }
+        
     }
     .container {
         display: flex;
@@ -232,10 +236,10 @@
     }
 
 //Contact
-.p-contact {
-    font-size: 2rem;
-    text-align: left;
-}
+    .p-contact {
+        font-size: 2rem;
+        text-align: left;
+    }
     .contact-form {
         align-items: right;
         h3 {
@@ -268,3 +272,4 @@
         padding: 5px 10px;
     }
 }
+/*===== END OF RESPONSIVE STYLING =====*/

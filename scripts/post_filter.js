@@ -1,6 +1,4 @@
-   
-   
-   
+// ====== This was for the most part taken from W3Schools' How To section and only very slightly changed. =====
     filterSelection("all")
     
     function filterSelection(c) {

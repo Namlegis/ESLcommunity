@@ -1,5 +1,3 @@
-// $fontDark-color: #084A5E;
-// $fontLight-color: #00f;
 $dark-color: #084A5E;
 $bright-color: #009ac8;
 $brightFade-color: #0099c838;
@@ -7,39 +5,42 @@ $light-color: #d4f2fc;
 $accent-color: #DE7B18;
 $accentLight-color: #E8D2BC;
 
-img {
-    object-fit: cover;
-}
-html {
-    font-size: 62.5%;  //this is so that I can use rems where 1rem = 10px; Using rems help with accessibility 
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    color: $dark-color;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 500;
-}
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-main {
-    width: 90%;
-    max-width: 2048px;
-    margin: 0 auto;
-    padding: 20px 0;
-    font-size: 2rem;
-    flex-grow: 1;
-}
-header {
-    border-bottom: solid $dark-color 1px;
-}
-//Font Styling Base - towards the top so that it can be overwritten easier
+/* ===== START -- TOP LEVEL BASIC STYLING AND RESETS ===== */
+    html {
+        font-size: 62.5%;  //this is so that I can use rems where 1rem = 10px; Using rems help with accessibility 
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        color: $dark-color;
+        font-family: 'Inconsolata', monospace;
+        font-weight: 500;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        width: 90%;
+        max-width: 2048px;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-size: 2rem;
+        flex-grow: 1;
+    }
+    header {
+        border-bottom: solid $dark-color 1px;
+    }
+    img {
+        object-fit: cover;
+    }
+/* ===== END -- TOP LEVEL BASIC STYLING AND RESETS ===== */
+
+/* ===== START -- Font Styling Base -> towards the top so that it can be overwritten easier =====*/
     a {
         color: $accent-color;
         &:hover {
@@ -68,9 +69,9 @@ header {
     .page-title {
         font-size: 7.2rem;
     }
-//END -- Basic Font Styling 
+/* ========= END of BASIC styling ======== */
 
-//START -- Header Styling for Desktop
+/* ========= START of HEADER styling for DESKTOP ======== */
     .header-wrapper{
         width: 90%;
         max-width: 2048px;
@@ -96,7 +97,8 @@ header {
             display: flex;
             justify-self: center;
         }
-        .break-line {
+        // This is the line separating the logo from the nav.
+        .break-line {  
             width: 1px;
             height: 6rem;
             background: $accent-color;
@@ -116,12 +118,13 @@ header {
                     font-weight: 300;
                     
                 }
+                //Contact Button
                 :nth-child(4){
-                    position: absolute; //Contact button pushed to the right
+                    position: absolute; //Allows to be pushed to the right
                     right: 0;
                 }
             }
-        //Creates a line above the navigation link when hovered
+            //Creates a line above the navigation link when hovered
             a::before {
                 content: '';
                 display: block;
@@ -136,9 +139,9 @@ header {
             }
         }
     }
-//END -- Header Styling
+/* ========= END of HEADER styling ======== */
 
-//START -- Footer Styling
+/* ========= START of FOOTER ======== */
     footer{
         background: $dark-color;
         padding: 4rem 0;
@@ -174,7 +177,8 @@ header {
                 opacity: 0.6;
             }
         }
-        .fa-facebook {
+        //Official colors of the companies
+        .fa-facebook { 
             background: #3B5998;
             color: white;
         }
@@ -201,7 +205,7 @@ header {
             }
         }
     }
-//End -- Footer Styling
+/* =========END of FOOTER Section ======== */
 
 /* =========START of Subscribe Section ======== */
     .subscribe {
@@ -251,15 +255,15 @@ header {
         }
         
     }
-    /* === Grid is used here so that the text can properly be styled and responsive === */
+    // Grid is used here so that the text can properly be styled and responsive
     .subscribe-text{
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-auto-rows: minmax(150px, auto);
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr; //Allows the "to get the latest" to start where I want it
         justify-items: center;
         align-items: center;
-        padding-right: 20px;
+        padding-right: 20px; //Creates separation between elements
         .grid-item-1 {
             grid-column-start: 1;
             grid-column-end: 4;
@@ -277,6 +281,7 @@ header {
         }
     }
 /* =========END of Subscribe Section ======== */
+
 
 
 @import 'home';

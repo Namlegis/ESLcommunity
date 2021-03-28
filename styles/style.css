@@ -1,8 +1,8 @@
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+/* ======
++++ PLEASE CHECK COMMENTS IN THE SCSS FILES +++
+=======*/
 
+/* ===== START -- TOP LEVEL BASIC STYLING AND RESETS ===== */
 html {
   font-size: 62.5%;
 }
@@ -45,6 +45,13 @@ header {
   border-bottom: solid #084A5E 1px;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ===== END -- TOP LEVEL BASIC STYLING AND RESETS ===== */
+/* ===== START -- Font Styling Base -> towards the top so that it can be overwritten easier =====*/
 a {
   color: #DE7B18;
 }
@@ -80,6 +87,8 @@ p {
   font-size: 7.2rem;
 }
 
+/* ========= END of BASIC styling ======== */
+/* ========= START of HEADER styling for DESKTOP ======== */
 .header-wrapper {
   width: 90%;
   max-width: 2048px;
@@ -172,6 +181,8 @@ p {
           transform: scale(1, 1);
 }
 
+/* ========= END of HEADER styling ======== */
+/* ========= START of FOOTER ======== */
 footer {
   background: #084A5E;
   padding: 4rem 0;
@@ -258,6 +269,7 @@ footer .built-by h2 {
   color: #DE7B18;
 }
 
+/* =========END of FOOTER Section ======== */
 /* =========START of Subscribe Section ======== */
 .subscribe {
   display: -webkit-box;
@@ -326,7 +338,6 @@ footer .built-by h2 {
   color: #E8D2BC;
 }
 
-/* === Grid is used here so that the text can properly be styled and responsive === */
 .subscribe-text {
   display: -ms-grid;
   display: grid;
@@ -367,6 +378,7 @@ footer .built-by h2 {
 }
 
 /* =========END of Subscribe Section ======== */
+/* ==== START of styling for Home Page =====*/
 .page-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,6 +425,7 @@ footer .built-by h2 {
   width: 100%;
 }
 
+/* === Latest section start -> Title with 4 articles in a row below it ===== */
 .latest-section {
   margin: 100px auto;
   display: -webkit-box;
@@ -453,7 +466,7 @@ footer .built-by h2 {
 
 .latest-posts {
   margin: 0 20px;
-  width: 22%;
+  width: 24%;
 }
 
 .latest-posts .img-div {
@@ -467,6 +480,9 @@ footer .built-by h2 {
      object-fit: fill;
 }
 
+/* === Latest section END ===== */
+/* ==== END of styling for Home Page =====*/
+/*===== START OF EXPERIENCES PAGE =====*/
 .stories-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +601,9 @@ footer .built-by h2 {
   margin-right: 1.2rem;
 }
 
+/*===== END OF EXPERIENCES PAGE =====*/
+/*===== START OF RESOURCES AND IDEAS STYLING =====*/
+/*Nav to Filter Articles */
 .choose-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +723,7 @@ footer .built-by h2 {
           flex-direction: column;
 }
 
+/*===== START OF RESOURCES AND IDEAS STYLING =====*/
 .contact-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -859,6 +879,7 @@ footer .built-by h2 {
   margin: 3rem 0 1rem 0;
 }
 
+/*===== START OF RESPONSIVE STYLING =====*/
 @media (max-width: 1300px) {
   .hero-img {
     max-height: 60vh;
@@ -916,6 +937,7 @@ footer .built-by h2 {
 }
 
 @media (max-width: 1000px) {
+  /*Navigation on Tablet / Mobile --- Makes the header switch from a flex row direction to column direction. Also fixes some of the font sizes to fit inside the viewport */
   .header-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -934,6 +956,39 @@ footer .built-by h2 {
   .header-wrapper nav ul li {
     font-size: 1.6rem;
     font-weight: 300;
+  }
+  /*END OF NAV on Tablet & Mobile */
+  .choose-nav {
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .choose-nav #btnContainer {
+    margin-top: 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .choose-nav #btnContainer .btn {
+    margin: 0;
+    padding: .6rem 1rem;
   }
   .stories {
     width: 100%;
@@ -960,6 +1015,10 @@ footer .built-by h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact-body-right,
+  .contact-form {
+    padding: 5rem 0;
   }
   .other-contact {
     display: -webkit-box;
@@ -1073,38 +1132,6 @@ footer .built-by h2 {
   .top-text h1 {
     font-size: 4.8rem;
   }
-  .top-text .choose-nav {
-    padding: 1rem;
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .top-text .choose-nav #btnContainer {
-    margin-top: 1rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .top-text .choose-nav #btnContainer .btn {
-    margin: 0;
-    padding: .6rem 1rem;
-  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1192,4 +1219,6 @@ footer .built-by h2 {
     padding: 5px 10px;
   }
 }
+
+/*===== END OF RESPONSIVE STYLING =====*/
 /*# sourceMappingURL=style.css.map */
